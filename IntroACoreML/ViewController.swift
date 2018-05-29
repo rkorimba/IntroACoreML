@@ -21,15 +21,22 @@ class ViewController: UIViewController {
     var capturePhotoOutput: AVCapturePhotoOutput?
     var captureVideoPreviewLayer: AVCaptureVideoPreviewLayer?
     var position = AVCaptureDevice.Position.back
+    var imagePicker = UIImagePickerController()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         miseEnPlaceCamera()
         rotationBouton.layer.cornerRadius = 5
         librairie.layer.cornerRadius = 5
+        imagePicker.delegate = self
     }
 
     @IBAction func librairieAction(_ sender: Any) {
+        
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true, completion: nil)
     }
 
     @IBAction func rotationAction(_ sender: Any) {
