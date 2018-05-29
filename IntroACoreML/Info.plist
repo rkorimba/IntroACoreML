@@ -41,5 +41,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Test de CoreML</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Prendre photo pour test de CoreML</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Test</string>
 </dict>
 </plist>
