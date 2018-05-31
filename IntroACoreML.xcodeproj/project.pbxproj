@@ -14,6 +14,8 @@
 		D02AB18E20BD548A00F51D8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D02AB18C20BD548A00F51D8A /* LaunchScreen.storyboard */; };
 		D02AB19620BD581E00F51D8A /* CameraExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02AB19520BD581E00F51D8A /* CameraExtension.swift */; };
 		D02AB19820BD5EA600F51D8A /* LibrairieExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02AB19720BD5EA600F51D8A /* LibrairieExtension.swift */; };
+		D02AB19B20BFE76C00F51D8A /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D02AB19A20BFE76C00F51D8A /* MobileNet.mlmodel */; };
+		D02AB19D20BFE7D300F51D8A /* CoreMLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02AB19C20BFE7D300F51D8A /* CoreMLExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		D02AB18F20BD548A00F51D8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D02AB19520BD581E00F51D8A /* CameraExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraExtension.swift; sourceTree = "<group>"; };
 		D02AB19720BD5EA600F51D8A /* LibrairieExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrairieExtension.swift; sourceTree = "<group>"; };
+		D02AB19A20BFE76C00F51D8A /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
+		D02AB19C20BFE7D300F51D8A /* CoreMLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		D02AB18220BD548A00F51D8A /* IntroACoreML */ = {
 			isa = PBXGroup;
 			children = (
+				D02AB19920BFE72C00F51D8A /* CoreMLModel */,
 				D02AB18320BD548A00F51D8A /* AppDelegate.swift */,
 				D02AB18520BD548A00F51D8A /* ViewController.swift */,
 				D02AB18720BD548A00F51D8A /* Main.storyboard */,
@@ -66,8 +71,17 @@
 				D02AB18F20BD548A00F51D8A /* Info.plist */,
 				D02AB19520BD581E00F51D8A /* CameraExtension.swift */,
 				D02AB19720BD5EA600F51D8A /* LibrairieExtension.swift */,
+				D02AB19C20BFE7D300F51D8A /* CoreMLExtension.swift */,
 			);
 			path = IntroACoreML;
+			sourceTree = "<group>";
+		};
+		D02AB19920BFE72C00F51D8A /* CoreMLModel */ = {
+			isa = PBXGroup;
+			children = (
+				D02AB19A20BFE76C00F51D8A /* MobileNet.mlmodel */,
+			);
+			path = CoreMLModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +156,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D02AB18620BD548A00F51D8A /* ViewController.swift in Sources */,
+				D02AB19B20BFE76C00F51D8A /* MobileNet.mlmodel in Sources */,
 				D02AB18420BD548A00F51D8A /* AppDelegate.swift in Sources */,
 				D02AB19620BD581E00F51D8A /* CameraExtension.swift in Sources */,
 				D02AB19820BD5EA600F51D8A /* LibrairieExtension.swift in Sources */,
+				D02AB19D20BFE7D300F51D8A /* CoreMLExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,9 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
         
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             photoChoisieImageView.image = image
+            if let data = UIImagePNGRepresentation(image) {
+                requete(data: data)
+            }
         }
         picker.dismiss(animated: true, completion: nil)
     }
