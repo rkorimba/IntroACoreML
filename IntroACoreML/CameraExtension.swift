@@ -63,6 +63,7 @@ extension ViewController: AVCapturePhotoCaptureDelegate {
         if error != nil {
             if let data = photo.fileDataRepresentation() {
                 photoChoisieImageView.image = UIImage(data: data)
+                requete(data: data)
             } else {
                 print("Le résultat ne donne pas de Data")
             }
